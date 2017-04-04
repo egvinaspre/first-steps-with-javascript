@@ -1,0 +1,39 @@
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script type="text/javascript"></script>
+    <script>
+        // Se asigna un valor numerico a una variable
+        var numero = 5;
+        console.log("numero=" + numero);
+        // No se asigna un valor a un numerico
+        var numeroSinAsignar;
+        console.log("numeroSinAsignar=" + numeroSinAsignar);
+        // Se comprueba que una variable numérica tenga un valor numerico correcto
+        if (!isNaN(numero)) {
+            console.log("numero es:" + numero);
+        } else {
+            console.log("numero es un número inválido.");
+        }
+        // Si un número is not a number
+        if (isNaN(numeroSinAsignar)) {
+            console.log("numeroSinAsignar es un número inválido.");
+        }
+        // Alert abre una ventana modal para dar un aviso. 
+        alert("Hello World!");
+        console.log("Se ha mandado la alerta 'Hello World!'");
+        // confirm abre una modal preguntando si se acepta o no. 
+        var confirmacion = confirm("Deseas continuar?");
+        console.log("Se ha mostrado la modal de confirmación y se ha elegido: " + confirmacion);
+        // prompt abre una modal para introducir un texto
+        var nombre = prompt("Escribe tu nombre a continuación:");
+        console.log("Se ha escrito un prompt y el nombre introducido es:" + nombre);
+        </script>
+
+        <div id="foo">
+            Página básica para ejecutar Scripts de Javascript.
+        </div>
+</body>
